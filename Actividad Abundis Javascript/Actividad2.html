@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa Paycitos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        .table-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0; 
+        }
+        table {
+            border-collapse: collapse; 
+        }
+        th, td {
+            padding: 10px; 
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Catalogo Pays</h1>
+    </header>
+    <main>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th width="900"><h2>productos</h2></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div>
+                                <img id="producto1" src="PayMaracuyaCacao.jpg" alt="Producto 1" style="cursor:pointer; width:150px; height:auto;">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img id="producto2" src="Proximamente.jpeg" alt="Producto 2" style="cursor:pointer; width:150px; height:auto;">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img id="producto3" src="Proximamente.jpeg" alt="Producto 3" style="cursor:pointer; width:150px; height:auto;">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pay de maracuya con <br>cacao</td>
+                        <td>PROXIMAMENTE</td>
+                        <td>PROXIMAMENTE</td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="añadirAlCarrito('PayMaracuyaCacao')">Añadir al carrito</button></td>
+                        <td><button onclick="añadirAlCarrito('Producto 2')">Añadir al carrito</button></td>
+                        <td><button onclick="añadirAlCarrito('Producto 3')">Añadir al carrito</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <img id="producto4" src="Proximamente.jpeg" alt="Producto 4" style="cursor:pointer; width:150px; height:auto;">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img id="producto5" src="Proximamente.jpeg" alt="Producto 5" style="cursor:pointer; width:150px; height:auto;">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img id="producto6" src="Proximamente.jpeg" alt="Producto 6" style="cursor:pointer; width:150px; height:auto;">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PROXIMAMENTE</td>
+                        <td>PROXIMAMENTE</td>
+                        <td>PROXIMAMENTE</td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="añadirAlCarrito('Producto 4')">Añadir al carrito</button></td>
+                        <td><button onclick="añadirAlCarrito('Producto 5')">Añadir al carrito</button></td>
+                        <td><button onclick="añadirAlCarrito('Producto 6')">Añadir al carrito</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <img id="producto7" src="Proximamente.jpeg" alt="Producto 7" style="cursor:pointer; width:150px; height:auto;">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img id=" producto8" src="Proximamente.jpeg" alt="Producto 8" style="cursor:pointer; width:150px; height:auto;">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img id="producto9" src="Proximamente.jpeg" alt="Producto 9" style="cursor:pointer; width:150px; height:auto;">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PROXIMAMENTE</td>
+                        <td>PROXIMAMENTE</td>
+                        <td>PROXIMAMENTE</td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="añadirAlCarrito('Producto 7')">Añadir al carrito</button></td>
+                        <td><button onclick="añadirAlCarrito('Producto 8')">Añadir al carrito</button></td>
+                        <td><button onclick="añadirAlCarrito('Producto 9')">Añadir al carrito</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2>Carrito de Compras</h2>
+        <div id="carrito">
+            <p>No hay productos en el carrito.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Carrito de Compras</p>
+    </footer>
+    <script src="script2.js"></script>
+</body>
+</html>
